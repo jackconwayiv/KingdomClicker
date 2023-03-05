@@ -9,7 +9,10 @@
   </head>
   <body>
     <h1>Estates</h1>
-    <div id="scoreboard">Score.</div>
+    <div><span id="food">0 food</span>
+      <span id="wood">0 wood</span>
+      <span id="timer">0 timer</span>
+  </div>
     <div>
       Estates goes here.
     </div>
@@ -19,7 +22,8 @@
     <div>
       Discard goes here.
     </div>
-    <button onclick="add(data)">Add</button>
+    <button onclick="addFood(data)">Add Food</button>
+    <button onclick="addWood(data)">Add Wood</button>
     <button onclick="reset()">Reset</button>
 	<script src="app.js"></script>
   </body>
