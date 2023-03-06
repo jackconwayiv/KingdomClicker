@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Kingdom Clicker</h1>
+    <h1 class="header">Kingdom Clicker</h1>
+    <p class="header">version 1.0.0</p>
+    <div id="gameZone"><div id="leftColumn">
     <div id="scoreboard">
       <span id="timer"></span>
       <span id="gold"></span>
@@ -19,19 +21,28 @@
       
   </div>
     <div id="kingdom">
-       <span>row 1 cell 1</span><span>row 1 cell 2</span><span>row 1 cell 3</span>
+      <div class="kingdomRow">
+       <span>MARKET</span><span>MILITARY</span><span>ACADEMY</span>
     </div>
-    <div>
-      <span>row 2 cell 1</span><span>row 2 cell 2</span><span>row 2 cell 3</span>
+    <div class="kingdomRow">
+      <span>TEMPLE</span><span class="townHall" class="activated">TOWN HALL</span><span>WOOD</span>
     </div>
-    <div>
-      <span>row 3 cell 1</span><span>row 3 cell 2</span><span>row 3 cell 3</span>
+    <div class="kingdomRow">
+      <span>METAL</span><span>FOOD</span><span>STONE</span>
     </div>
+  </div>
+  <div id="buttonRow">
     <button onclick="addFood(data)">Add Food</button>
     <button onclick="addWood(data)">Add Wood</button>
     <button onclick="addStone(data)">Add Stone</button>
     <button onclick="addMetal(data)">Add Metal</button>
     <button onclick="reset()">Reset</button>
+  </div>
+</div>
+<div id="rightColumn">
+  <h3 class="header">UPGRADES</h3>
+</div>
+</div>
 	<script src="app.js"></script>
   </body>
 </html>
