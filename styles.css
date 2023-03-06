@@ -22,21 +22,31 @@ div {
 
 .header {
   display: flex;
-  /* width: 100%; */
   justify-content: center;
   background: transparent;
   font-family: Copperplate, Papyrus, fantasy;
 }
 
+
+.subheader {
+  /* background-color:#edede9; */
+  width: 100%;
+  justify-content: center;
+  background: transparent;
+  font-family: Copperplate, Papyrus, fantasy;
+  
+  /* border: 2px black solid; */
+}
+
+
 #leftColumn {
   width: 70%;
-  /* background-color: blue; */
 }
 
 #rightColumn {
   width: 30%;
-  margin:10px;
-  justify-content: flex-start;
+  margin: 10px;
+  justify-items: center;
 }
 
 #upgrades-container {

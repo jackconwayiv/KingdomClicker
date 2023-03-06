@@ -170,3 +170,15 @@ function tick() {
 }
 
 setInterval(tick, 1000);
+
+//buyBuildings functions set false to true and remove that option from the upgrades menu;
+//buyUpgrades functions increment the quantity of that upgrade owned (workers) and stick around;
+//can I get two columns of upgrades instead of one? or add a scrollbar so it doesnt look weird?
+//can I make the squares in the Kingdom bigger?
+//have buttons that won't work grayed out and inactive.
+//have an "are you sure" window pop up when "reset kingdom" is clicked.
+//break this code up into modules (does that work outside of node?)
+//market allows you to convert resources to gold, but the more you do, the lower the price of that resource
+//market also allows you to buy resources with gold, but the more you buy, the more expensive the resource price gets
+//market increments in units of 10, but it can scale by level
+//some one-time upgrades allow your click to become more powerful. the button changes to show this.
