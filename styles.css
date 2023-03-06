@@ -1,31 +1,58 @@
 * {
-  margin: 10px;
-  background-color: antiquewhite;
+  background-color: #e8eddf;
+  /* margin: 5px; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+div {
+  background: transparent;
+}
+
+#topBar {
+  display: flex;
+  width: 100%;
+  /* position: relative; */
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px black;
+  background-color: #656d4a;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+  display: flex;
+  /* width: 100%; */
+  justify-content: center;
+  background: transparent;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
 #leftColumn {
-  width: 65%;
+  width: 70%;
   /* background-color: blue; */
 }
 
 #rightColumn {
-  width: 35%;
-  align: center;
-  /* background-color: red; */
+  width: 30%;
+  margin:10px;
+  justify-content: flex-start;
+}
+
+#upgrades-container {
+  margin: 5px;
+  background-color: #a68a64;
+  border: 2px solid black;
+  border-radius: 8%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #gameZone {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-#buttonRow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .active {
@@ -35,17 +62,6 @@
 button {
   background-color: white;
   size: 50%;
-}
-
-.header {
-  text-align: center;
-}
-
-#scoreboard {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 #kingdom {
@@ -60,16 +76,111 @@ button {
 }
 
 .kingdomRow span {
-  width: 124px;
-  height: 124px;
-  /* line-height: 124px;
-  vertical-align: middle; */
-  background-color: tan;
-  padding: 5px;
+  width: 130px;
+  height: 130px;
+  background-color: #9C6644;
+  background-image: linear-gradient(to bottom right, #a98467,#6c584c);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+
+
   text-align: center;
   border: 2px solid black;
 }
 
-.activated {
-  background-color: green;
+#townHall {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  background-image: radial-gradient(circle, #bcb8b1,#8a817c);
+
+}
+#farmPlot {
+  display:flex;
+}
+
+  #farm {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #A3B18A;
+    background-image: radial-gradient(circle, #DAD7CD,#A3B18A);
+  }
+
+  #farm > div {
+    width: 100%;
+  }
+
+  #camp > div {
+    width: 100%;
+  }
+
+  #mines > div {
+    width: 100%;
+  }
+
+  #quarry > div {
+    width: 100%;
+  }
+
+
+  #market > div {
+    width: 100%;
+  }
+
+  #camp {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, #A3B18A, #588157);  
+  }
+
+  #market {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, #f5cb5c, #f7b267);  
+  }
+
+
+  #mines {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, #a9d6e5, #7d8597);  
+  }
+
+  #quarry {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, #c89f9c, #c97c5d);
+  }
+
+.buildingName {
+  font-weight: bold;
+  font-style:italic;
+}
+
+.smallerFont {
+  font-size: .75rem;
+}
+
+.upgrade-div {
+  height: 72px;
+  border: 2px black solid;
+  padding: 2px;
+  margin: 5px;
+  background-color: #edede9;
 }

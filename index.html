@@ -8,41 +8,35 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 class="header">Kingdom Clicker</h1>
+    <div id="topBar">
+    <h1 class="header">📯 Kingdom Clicker</h1>
     <p class="header">version 1.0.0</p>
-    <div id="gameZone"><div id="leftColumn">
-    <div id="scoreboard">
-      <span id="timer"></span>
-      <span id="gold"></span>
-      <span id="food"></span>
-      <span id="wood"></span>
-      <span id="stone"></span>
-      <span id="metal"></span>
-      
   </div>
-    <div id="kingdom">
-      <div class="kingdomRow">
-       <span>MARKET</span><span>MILITARY</span><span>ACADEMY</span>
+    <div id="gameZone">
+      <div id="leftColumn">
+      <div id="kingdom">
+        <div class="kingdomRow">
+          <span id="academyPlot"></span><span id="militaryPlot"></span><span id="marketPlot"></span>
+        </div>
+        <div class="kingdomRow">
+          <span id="templePlot"></span><span id="townHallPlot"></span><span id="campPlot"></span>
+        </div>
+        <div class="kingdomRow">
+          <span id="minesPlot"></span><span id="farmPlot"></span><span id="quarryPlot"></span>
+        </div>
+      </div>
     </div>
-    <div class="kingdomRow">
-      <span>TEMPLE</span><span class="townHall" class="activated">TOWN HALL</span><span>WOOD</span>
-    </div>
-    <div class="kingdomRow">
-      <span>METAL</span><span>FOOD</span><span>STONE</span>
+    <div id="rightColumn">
+      <div id="upgrades-container">
+      <h3 class="header">UPGRADES</h3>
+      <div class="upgrade-div smallerFont">FARMER<br>cost: 20 🌾<br>+1 🌾 per second<br>Qty: 0</div>
+      <div class="upgrade-div smallerFont">LOGGER<br>cost: 50 🌾<br>+1 🌾 per second<br>Qty: 0</div>
+      <div class="upgrade-div smallerFont">MASON<br>cost: 50 🌾 & 50 🪵<br>+1 🌾 per second<br>Qty: 0 </div>
+      <div class="upgrade-div smallerFont">MINER<br>cost: 50 🌾 & 50 🪵<br>+1 🌾 per second<br>Qty: 0 </div>
+      <div class="upgrade-div smallerFont">MERCHANT<br>cost: 30 🌾 & 30 🪵 & 30 🧱 & 30 🔩<br>+1 🌾 per second<br>Qty: 0</div>
     </div>
   </div>
-  <div id="buttonRow">
-    <button onclick="addFood(data)">Add Food</button>
-    <button onclick="addWood(data)">Add Wood</button>
-    <button onclick="addStone(data)">Add Stone</button>
-    <button onclick="addMetal(data)">Add Metal</button>
-    <button onclick="reset()">Reset</button>
   </div>
-</div>
-<div id="rightColumn">
-  <h3 class="header">UPGRADES</h3>
-</div>
-</div>
 	<script src="app.js"></script>
   </body>
 </html>
